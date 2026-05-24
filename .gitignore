@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Testing
+coverage/
+
+# Next.js
+.next/
+out/
+build/
+
+# Production / runtime artifacts
+*.tsbuildinfo
+next-env.d.ts
+
+# Local environment files (NEVER commit secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS / editor
+.DS_Store
+*.pem
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Local stub artifacts (booking submissions, sent emails inspected during dev)
+.local-stubs/
+
+# Sanity (when added)
+.sanity/
+.scratch/
+
+# Reference assets supplied by the client — kept locally, not versioned.
+# Optimized derivatives that the site actually uses live under public/images/.
+Downloaded artifacts/
+.playwright-mcp/
+
+# Claude Code session-local settings (per-machine)
+.claude/

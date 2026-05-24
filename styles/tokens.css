@@ -1,0 +1,67 @@
+/* =============================================================================
+ * Keynu design tokens
+ * -----------------------------------------------------------------------------
+ * Single source of truth for brand palette + typography variables, exposed as
+ * CSS custom properties so they're inspectable in dev tools and themeable
+ * without rebuilding Tailwind.
+ *
+ * Palette per Keynu Brand Guidelines:
+ *   - Hero pairing: Saffron (#FBB04C) + Mogra (#FFFEF0)
+ *   - Surfaces:     Mogra (default) / Sandalwood (#EADBB7) secondary
+ *   - Type:         Walnut (#562E26) body / Forest (#253327) accent
+ *
+ * Walnut + Forest must be used as accents only — never as full backgrounds.
+ * ============================================================================= */
+
+:root {
+  /* Brand palette */
+  --color-saffron: #fbb04c;
+  --color-mogra: #fffef0;
+  --color-sandalwood: #eadbb7;
+  --color-walnut: #562e26;
+  --color-forest: #253327;
+
+  /* Semantic tokens — use these in components, not raw palette */
+  --surface-canvas: var(--color-mogra);
+  --surface-secondary: var(--color-sandalwood);
+  --surface-accent: var(--color-forest);
+
+  --ink-primary: var(--color-walnut);
+  --ink-secondary: rgb(86 46 38 / 0.72); /* Walnut at 72% */
+  --ink-muted: rgb(86 46 38 / 0.56);
+  --ink-on-accent: var(--color-mogra);
+
+  --accent-primary: var(--color-saffron);
+
+  /* Typography — fonts injected via next/font in app/layout.tsx */
+  --font-body: var(--font-nunito-sans), system-ui, sans-serif;
+  --font-heading: var(--font-fraunces), Georgia, serif;
+
+  /* Motion */
+  --ease-keynu: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 200ms;
+  --duration-base: 400ms;
+  --duration-slow: 700ms;
+
+  /* Layout rhythm */
+  --section-y: 6rem;
+  --section-y-lg: 8rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-y: 4rem;
+    --section-y-lg: 6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
