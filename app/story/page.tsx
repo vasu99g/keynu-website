@@ -20,6 +20,7 @@ const chapters = [
     eyebrow: "The name",
     title: "Why kinnow?",
     body: [
+      '"The name Keynu comes from kinnow — a fruit that has always been part of our lives. For me, it symbolises nourishment and heritage." — Dr. Sonia Gupta, founder.',
       "Kinnow is the everyday Delhi citrus — sweet, sharp, comforting. Familiar in every home, never trying too hard.",
       "That's the feeling we want you to leave with. Not a luxury moment that fades by Monday. A quiet confidence that holds through every season.",
     ],
@@ -48,6 +49,8 @@ export default function StoryPage() {
     { src: "/images/doctors/dr-sonia.jpg", alt: "Dr. Sonia Gupta" },
     { src: "/images/bento/kinu-partition.jpg", alt: "Etched kinu motif partition" },
     { src: "/images/bento/consult-room.jpg", alt: "Consultation room" },
+    { src: "/images/bento/doctor-detail.jpg", alt: "Care in motion" },
+    { src: "/images/bento/gloved-portrait.jpg", alt: "Procedure-room calm" },
   ];
 
   return (

@@ -11,15 +11,15 @@ export const siteSettings: SiteSettings = {
   brandName: "Keynu",
   tagline: "Beyond beauty",
   description:
-    "An aesthetics and wellness clinic in Paschim Vihar, New Delhi. Doctor-led care across face, skin, hair, body and smile. A unit of BDC.",
+    "An aesthetics and wellness clinic in Paschim Vihar, New Delhi — a unit of BDC Prive. Doctor-led care across face, skin, hair, body and smile.",
   contact: {
     addressLines: ["B-2/11, Basement", "Paschim Vihar"],
     city: "New Delhi",
     pincode: "110063",
     country: "India",
-    phones: ["+91 9311041404", "+91 9311301404"],
-    email: "contact@keynu.com",
-    whatsappNumber: "919311041404",
+    phones: ["+91 9311211404", "+91 9311041404"],
+    email: "infokeynu@gmail.com",
+    whatsappNumber: "919311211404",
     mapUrl: "https://maps.google.com/?q=Keynu+Paschim+Vihar+New+Delhi",
   },
   hours: [
@@ -29,13 +29,13 @@ export const siteSettings: SiteSettings = {
     { day: "Thu", open: "10:00", close: "20:00" },
     { day: "Fri", open: "10:00", close: "20:00" },
     { day: "Sat", open: "10:00", close: "20:00" },
-    { day: "Sun", open: "11:00", close: "18:00" },
+    { day: "Sun", open: "10:00", close: "19:00" },
   ],
   social: [
     {
       platform: "instagram",
-      handle: "@keynu",
-      url: "https://instagram.com/keynu",
+      handle: "@keynuaesthetics",
+      url: "https://instagram.com/keynuaesthetics",
     },
   ],
   founded: 2021,

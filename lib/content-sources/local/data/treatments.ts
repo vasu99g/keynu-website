@@ -28,7 +28,7 @@ export const treatments: Treatment[] = [
     name: "Morpheus 8",
     categorySlug: "skin-tightening-and-lifting",
     shortDescription:
-      "Microneedling combined with radiofrequency to tighten sagging skin, reduce acne scars, improve texture, and shrink pores.",
+      "Fractional radio-frequency microneedling for jawline definition, acne scars, open pores, and skin tightening across the face and body.",
     machine: "Triton by InMode — Morpheus 8",
     areaVariants: [
       { area: "Upper arms, stomach, thighs, hips", sessions: "4", durationMinutes: 90 },
@@ -99,7 +99,7 @@ export const treatments: Treatment[] = [
     name: "Non-Invasive Fat Loss (Emerald)",
     categorySlug: "body-contouring-and-fat-loss",
     shortDescription:
-      "Low-level laser therapy that shrinks fat cells for inch loss, body contour, and metabolic activity. Zero downtime.",
+      "FDA-approved green cold laser for full-body fat reduction. Effective for patients up to BMI 40 — six sessions across two weeks, zero downtime, no incision.",
     machine: "Emerald Laser",
     areaVariants: [
       {
@@ -114,8 +114,8 @@ export const treatments: Treatment[] = [
     name: "Body Contouring (Artiqa)",
     categorySlug: "body-contouring-and-fat-loss",
     shortDescription:
-      "Non-invasive laser body contouring for targeted inch loss, cellulite reduction, and skin firming via laser lipolysis.",
-    machine: "Artiqa",
+      "Thermal-shock body sculpting (Artiqa T-Shock) paired with electro-muscle stimulation. Targets stubborn inches, cellulite, and skin firming over six sessions.",
+    machine: "Artiqa T-Shock",
     areaVariants: [
       { area: "Any body area (arms, stomach, thighs, hips, back)", sessions: "6", durationMinutes: 60 },
     ],

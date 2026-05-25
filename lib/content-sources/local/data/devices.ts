@@ -11,63 +11,66 @@ export interface Device {
 
 /**
  * The six core devices on the clinic floor. Drives the Technology
- * section's 3×2 medallion grid. Copy emphasises clearance, calibration
- * cadence, and downtime — not marketing-speak.
+ * section's 3×2 medallion grid. Names + use-cases verified against the
+ * live keynu.in equipment list (Triton InMode, Lumecca Spectra XT,
+ * Emerald Laser, Artiqa T-Shock, Morpheus 8, HydraFacial). Copy
+ * emphasises clearance, calibration cadence, and downtime — not
+ * marketing-speak.
  */
 export const devices: Device[] = [
   {
-    id: "qsw",
-    name: "Q-Switched Nd:YAG",
-    tag: "Skin · Pigmentation",
-    body: "Sub-nanosecond pulses fragment pigment clusters without injuring surrounding skin. Six to eight sessions, monthly, no downtime.",
+    id: "triton",
+    name: "Triton (InMode)",
+    tag: "Hair · Laser hair reduction",
+    body: "Multi-wavelength diode + Nd:YAG laser calibrated for every hair-follicle type and South Asian skin tone. Six to eight sessions, four to six weeks apart, minimal heat at the surface.",
     icon: "zap",
     cleared: "USFDA · CDSCO",
     downtime: "0 days",
   },
   {
-    id: "co2",
-    name: "Fractional CO₂ Laser",
-    tag: "Skin · Resurfacing & scars",
-    body: "Micro-columns of resurfacing for acne scars, stretch marks and uneven texture. Three sessions, eight weeks apart.",
+    id: "spectra",
+    name: "Lumecca Spectra XT",
+    tag: "Skin · Pigmentation & tone",
+    body: "Q-Switched Nd:YAG paired with intense pulsed light. Fragments pigment clusters, lifts uneven tone and freckles, and resurfaces via the Hollywood / Carbon Peel protocol. No downtime.",
     icon: "scan-line",
     cleared: "USFDA · CDSCO",
-    downtime: "4–5 days",
+    downtime: "0 days",
   },
   {
     id: "hydra",
     name: "HydraFacial MD",
-    tag: "Skin · Deep cleanse",
-    body: "Vortex extraction, antioxidant infusion, lymphatic drainage — one 90-minute appointment, immediate glow, zero downtime.",
+    tag: "Skin · Deep cleanse & hydration",
+    body: "Vortex extraction, antioxidant infusion, lymphatic drainage — one 45-minute appointment, immediate glow, zero downtime.",
     icon: "droplets",
     cleared: "USFDA",
     downtime: "0 days",
   },
   {
-    id: "rf",
-    name: "RF Microneedling",
-    tag: "Skin · Tightening",
-    body: "Insulated micro-needles deliver radio-frequency energy deep into the dermis. Lifts, tightens, refines pores. Three monthly sessions.",
+    id: "morpheus",
+    name: "Morpheus 8 (InMode)",
+    tag: "Face · RF microneedling",
+    body: "Fractional radio-frequency microneedling for jawline definition, acne scars, open pores and skin tightening. Four sessions, monthly, brief recovery between.",
     icon: "grid-2x2",
     cleared: "USFDA · CDSCO",
     downtime: "1 day",
   },
   {
-    id: "cryo",
-    name: "Cryolipolysis",
-    tag: "Body · Fat reduction",
-    body: "Controlled cooling crystallises stubborn fat cells, which clear over twelve weeks. One to three centimetres lost per cycle, no incision.",
+    id: "emerald",
+    name: "Emerald Laser",
+    tag: "Body · Non-invasive fat loss",
+    body: "FDA-approved green cold laser for full-body fat reduction. Effective for patients up to BMI 40 — six sessions across two weeks, no incision, no downtime.",
     icon: "snowflake",
     cleared: "USFDA",
     downtime: "0 days",
   },
   {
-    id: "fue",
-    name: "Sapphire FUE + GFC",
-    tag: "Hair · Restoration",
-    body: "Sapphire-blade follicular extraction paired with growth-factor concentrate. Performed personally by Dr. Rajeev, eight to ten hour sessions.",
+    id: "artiqa",
+    name: "Artiqa T-Shock",
+    tag: "Body · Contouring & inch loss",
+    body: "Thermal-shock body sculpting paired with electro-muscle stimulation. Targets stubborn inches, cellulite and skin firming over six sessions, without surgery.",
     icon: "sprout",
     cleared: "CDSCO",
-    downtime: "2 days",
+    downtime: "0 days",
   },
 ];
 

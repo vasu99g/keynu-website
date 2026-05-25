@@ -104,7 +104,7 @@ export default function CareersPage() {
                   <div className="self-start">
                     <Button asChild variant="primary">
                       <a
-                        href={`mailto:careers@keynu.com?subject=${encodeURIComponent(`Application: ${job.title}`)}`}
+                        href={`mailto:infokeynu@gmail.com?subject=${encodeURIComponent(`Career: ${job.title}`)}`}
                       >
                         Apply →
                       </a>

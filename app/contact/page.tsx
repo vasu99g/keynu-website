@@ -12,7 +12,7 @@ import { getSiteSettings } from "@/lib/content/site";
 export const metadata: Metadata = {
   title: "Contact & visit",
   description:
-    "B-2/11, Basement, Paschim Vihar, New Delhi. Open Mon-Sat. Call or WhatsApp +91 9311041404, email contact@keynu.com.",
+    "B-2/11, Basement, Paschim Vihar, New Delhi 110063. Open Mon-Sun. Call or WhatsApp +91 9311211404, email infokeynu@gmail.com.",
 };
 
 export default function ContactPage() {

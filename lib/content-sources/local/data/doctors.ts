@@ -13,7 +13,7 @@ export const doctors: Doctor[] = [
     name: "Dr. Sonia Gupta",
     role: "Co-founder & Medical Director",
     qualifications: ["BDS", "MDS"],
-    bio: "Co-founder and the face of Keynu. Leads the clinic's medical direction, treatment protocols, and patient experience with a team of world-class dermatologists. One principle: treat every person like family.",
+    bio: '"The name Keynu comes from kinnow — a fruit that has always been part of our lives. For me, it symbolises nourishment and heritage." Dr. Sonia leads the practice with a team of dermatologists, skin therapists and staff she has personally selected. Every clinical decision is doctor-led; every team member is held to one principle — treat every client like family.',
     isLead: true,
     order: 1,
   },

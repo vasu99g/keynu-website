@@ -43,7 +43,7 @@ export default function PrivacyPage() {
         {
           heading: "Your rights",
           body: [
-            "You can request a copy of your records, ask us to correct anything that's wrong, or ask us to delete non-medical data. Email contact@keynu.com or speak to our front desk. We'll respond within 7 working days.",
+            "You can request a copy of your records, ask us to correct anything that's wrong, or ask us to delete non-medical data. Email infokeynu@gmail.com or speak to our front desk. We'll respond within 7 working days.",
           ],
         },
         {

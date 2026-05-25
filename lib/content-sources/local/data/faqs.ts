@@ -25,7 +25,7 @@ export const faqs: FAQItem[] = [
     id: "credentials",
     question: "Are the doctors board-certified?",
     answer:
-      "Our team includes board-certified dermatologists, our founders Dr. Sonia and Dr. Rajeev Gupta (implantologists with 25+ years), and licensed therapists. Every clinical decision is doctor-led.",
+      "Our team includes board-certified dermatologists, licensed therapists, and our founder Dr. Sonia Gupta (BDS, MDS) — personally selected and overseen. Every clinical decision is doctor-led.",
   },
   {
     id: "pricing",
