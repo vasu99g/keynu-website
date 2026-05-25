@@ -24,3 +24,5 @@ export {
 } from "./data/sambhal";
 export { faqs, type FAQItem } from "./data/faqs";
 export { results, type BeforeAfterResult } from "./data/results";
+export { journalPosts, type JournalPost } from "./data/journal-posts";
+export { jobOpenings, type JobOpening } from "./data/job-openings";
