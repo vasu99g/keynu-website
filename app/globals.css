@@ -20,15 +20,98 @@
     line-height: 1.6;
   }
 
+  /* Display-class headings (h1, h2) get the editorial all-caps treatment
+     borrowed from the brand design refresh. h3+ stay mixed-case for
+     readability of sub-headers and inline use. */
   h1,
-  h2,
+  h2 {
+    font-family: var(--font-heading);
+    color: var(--ink-heading);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    line-height: 1.08;
+  }
+
   h3,
   h4,
   h5,
   h6 {
     font-family: var(--font-heading);
-    color: var(--ink-primary);
+    color: var(--ink-heading);
     font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  /* Inline <em> inside display headings switches to the editorial italic
+     face in mixed case + warmer color — the design refresh's signature
+     punctuation. */
+  h1 em,
+  h2 em {
+    font-family: var(--font-editorial);
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--accent-pop);
+  }
+}
+
+@layer utilities {
+  /* Subtle ken-burns zoom so the hero strip feels alive even before the
+     video stream is decoded. Used by the hero video framing. */
+  @keyframes hero-strip-zoom {
+    from {
+      transform: scale(1) translateX(0);
+    }
+    to {
+      transform: scale(1.08) translateX(-2%);
+    }
+  }
+  .animate-hero-zoom {
+    animation: hero-strip-zoom 14s ease-in-out infinite alternate;
+  }
+
+  /* ────────────────────────────────────────────────────────────────────
+   * Pillar card hover gradients — declared in CSS so the colors aren't
+   * lost to Tailwind's JIT (it can't see classes built from a dynamic
+   * key). Each tone uses a 135° linear gradient between two brand
+   * colors. `color: inherit` on the children (set via `text-current`)
+   * lets the type flip color in step with the background.
+   * ──────────────────────────────────────────────────────────────────── */
+  .pillar-card {
+    transition:
+      background-color var(--duration-base) var(--ease-keynu),
+      background-image var(--duration-base) var(--ease-keynu),
+      color var(--duration-base) var(--ease-keynu),
+      border-color var(--duration-base) var(--ease-keynu);
+  }
+
+  .pillar-card[data-tone="marigold"]:hover {
+    /* Tighter orange spectrum so Face reads as distinctly more saturated
+       than Smile's saffron-gold. */
+    background-image: linear-gradient(135deg, #e87722 0%, #c25a14 100%);
+    color: var(--color-mogra);
+    border-color: transparent;
+  }
+  .pillar-card[data-tone="saffron"]:hover {
+    background-image: linear-gradient(135deg, #fbb04c 0%, #ef9e08 100%);
+    color: var(--color-walnut);
+    border-color: transparent;
+  }
+  .pillar-card[data-tone="walnut"]:hover {
+    background-image: linear-gradient(135deg, #562e26 0%, #1b1612 100%);
+    color: var(--color-mogra);
+    border-color: transparent;
+  }
+  .pillar-card[data-tone="forest"]:hover {
+    background-image: linear-gradient(135deg, #253327 0%, #1b1612 100%);
+    color: var(--color-mogra);
+    border-color: transparent;
+  }
+  .pillar-card[data-tone="madder"]:hover {
+    background-image: linear-gradient(135deg, #9d3a2f 0%, #562e26 100%);
+    color: var(--color-mogra);
+    border-color: transparent;
   }
 
   /* Visible focus ring — never remove for accessibility. */

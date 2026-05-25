@@ -28,9 +28,9 @@ export function AudioToggle({ className }: AudioToggleProps) {
       aria-pressed={isPlaying}
       aria-label={isPlaying ? "Mute ambient tampura drone" : "Play ambient tampura drone"}
       className={cn(
-        "relative inline-flex h-9 w-9 items-center justify-center rounded-full border border-walnut/15 text-walnut transition-all duration-base ease-keynu",
-        "hover:border-walnut/40 hover:bg-walnut/5",
-        isPlaying && "bg-walnut/5 ring-2 ring-saffron/40",
+        "relative inline-flex h-9 w-9 items-center justify-center rounded-full border border-current/20 text-current transition-all duration-base ease-keynu",
+        "hover:border-current/50 hover:bg-current/5",
+        isPlaying && "bg-current/5 ring-2 ring-saffron/40",
         className,
       )}
     >

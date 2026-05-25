@@ -5,39 +5,39 @@ export interface ExperiencePillar {
 }
 
 /**
- * Five-pillar patient journey defined in the Keynu brand guidelines
- * (Brand Activation → Customer Experience). These anchor the home page
- * "Experience" section and the full /experience page.
+ * Five-pillar patient journey — the steps a Keynu visit actually flows
+ * through. Copy intentionally plain-spoken, not the luxury-brand glossary
+ * of the earlier draft.
  */
 export const experiencePillars: ExperiencePillar[] = [
   {
     number: "01",
-    title: "Welcome & first impression",
+    title: "Welcome",
     description:
-      "The journey begins the moment you step through the door — a warm greeting, soft lighting, the scent of mogra or sandalwood, and a signature welcome drink to settle in.",
+      "You'll smell mogra before you see anyone. Soft lighting, a welcome drink, a moment to settle.",
   },
   {
     number: "02",
-    title: "Consultation & customisation",
+    title: "Consultation",
     description:
-      "One-on-one time with a specialist who listens deeply to your concerns and goals — the foundation for a plan designed to uplift, not just treat.",
+      "One-on-one with a doctor who actually listens. Your plan is built around what you came in for — never what we'd like to upsell.",
   },
   {
     number: "03",
-    title: "Treatment ritual",
+    title: "Treatment",
     description:
-      "Every treatment is considered a ritual. From the texture of our linens to the language we use, each step is explained so you feel informed, in control, and at ease.",
+      "Every step explained. Comfortable linens, comfortable language. You stay in control of what happens next.",
   },
   {
     number: "04",
-    title: "Post-treatment care & follow-up",
+    title: "Follow-up",
     description:
-      "Our care continues well after the session ends. Thoughtful aftercare kits, personalised WhatsApp check-ins, and gentle reminders for the next step.",
+      "Aftercare kits and WhatsApp check-ins. We don't disappear the moment you walk out.",
   },
   {
     number: "05",
-    title: "Moments of delight",
+    title: "Small things",
     description:
-      "Small gestures with lasting impression — a handwritten note, a seasonal gift, a birthday surprise. Each visit is designed to feel meaningful and memorable.",
+      "A handwritten note. A birthday surprise. A treatment we already know you'll love. The small things land.",
   },
 ];

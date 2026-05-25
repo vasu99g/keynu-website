@@ -5,31 +5,37 @@ import { Heading } from "@/components/primitives/Heading";
 import { Text } from "@/components/primitives/Text";
 import { Button } from "@/components/primitives/Button";
 import { FadeIn } from "@/components/primitives/FadeIn";
+import { Watermark } from "@/components/brand/Watermark";
 import { getSiteSettings } from "@/lib/content/site";
 
 /**
- * Closing "Visit" call-to-action — sits on the forest accent band for a clean
- * tonal exit before the footer. Pulls contact details from site settings so
- * non-tech editors can update the address/phone in one place.
+ * Closing "Visit" call-to-action — forest accent band that sits as a clean
+ * tonal exit before the footer. Tagged with `data-header-tone="dark"` so
+ * the sticky header inverts when this section overlaps the viewport top.
  */
 export function VisitCTASection() {
   const { contact, hours } = getSiteSettings();
 
   return (
-    <Section tone="accent" spacing="loose">
+    <Section tone="accent" spacing="loose" data-header-tone="dark">
+      <Watermark symbol="emblem" position="bottom-right" size={420} opacity={0.08} rotation={-6} tone="light" />
       <Container>
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-20">
           <div className="lg:col-span-7">
             <FadeIn from="bottom">
-              <span className="font-body text-micro uppercase tracking-widest text-mogra/60">
-                + Visit us
+              <span className="inline-flex items-center gap-3 font-body text-micro uppercase tracking-widest text-mogra/65">
+                <span aria-hidden="true" className="text-saffron">
+                  +
+                </span>
+                Visit us
               </span>
-              <Heading as="h2" size="h1" className="mt-4 text-mogra">
+              <Heading as="h2" size="h1" className="mt-5 text-mogra">
                 Step in. We&apos;ll handle the rest.
               </Heading>
-              <Text size="lg" className="mt-5 text-mogra/75">
-                Booking a consultation takes a minute. Whether you know exactly what you need or
-                want guidance, a doctor will sit with you before any treatment is recommended.
+              <Text size="lg" className="mt-5 text-mogra/80">
+                Booking a consultation takes a minute. Whether you know exactly
+                what you want or you want guidance, a doctor will sit with you
+                first.
               </Text>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button asChild size="lg" variant="secondary">
@@ -55,7 +61,7 @@ export function VisitCTASection() {
 
           <div className="lg:col-span-5">
             <FadeIn from="bottom" delay={0.1}>
-              <div className="rounded-3xl border border-mogra/20 p-6 md:p-8">
+              <div className="rounded-xl border border-mogra/20 p-6 md:p-8">
                 <p className="font-body text-micro uppercase tracking-widest text-mogra/60">
                   Clinic
                 </p>

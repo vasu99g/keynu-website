@@ -1,9 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { bodyFont, headingFont } from "@/styles/fonts";
+import { bodyFont, devanagariFont, editorialFont, headingFont } from "@/styles/fonts";
 import { cn } from "@/lib/utils/cn";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { BackgroundAudioProvider } from "@/components/audio/BackgroundAudio";
+import { CustomCursor } from "@/components/interactive/CustomCursor";
+import { ScrollProgress } from "@/components/interactive/ScrollProgress";
 import { getSiteSettings } from "@/lib/content/site";
 
 import "./globals.css";
@@ -46,7 +48,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="en-IN"
       data-scroll-behavior="smooth"
-      className={cn(bodyFont.variable, headingFont.variable)}
+      className={cn(
+        bodyFont.variable,
+        headingFont.variable,
+        editorialFont.variable,
+        devanagariFont.variable,
+      )}
     >
       <body className="min-h-screen bg-mogra text-walnut antialiased">
         <a
@@ -56,6 +63,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to main content
         </a>
         <BackgroundAudioProvider>
+          <ScrollProgress />
+          <CustomCursor />
           <SiteHeader />
           <main id="main-content">{children}</main>
           <SiteFooter />

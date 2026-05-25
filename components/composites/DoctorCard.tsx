@@ -26,14 +26,14 @@ export function DoctorCard({ doctor, variant = "default", imageSrc, className }:
   return (
     <article
       className={cn(
-        "flex flex-col gap-5 rounded-3xl border border-walnut/10 bg-mogra p-6",
+        "flex flex-col gap-5 rounded-xl border border-walnut/10 bg-mogra p-6",
         isHero && "md:flex-row md:gap-10 md:p-8 lg:p-10",
         className,
       )}
     >
       <div
         className={cn(
-          "relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-sandalwood/70",
+          "relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-sandalwood/70",
           isHero && "md:max-w-sm md:shrink-0",
         )}
       >

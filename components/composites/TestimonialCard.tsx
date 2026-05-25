@@ -16,7 +16,7 @@ export function TestimonialCard({ testimonial, className }: TestimonialCardProps
   return (
     <figure
       className={cn(
-        "flex h-full flex-col justify-between gap-8 rounded-3xl border border-walnut/10 bg-mogra p-6 md:p-8",
+        "flex h-full flex-col justify-between gap-8 rounded-xl border border-walnut/10 bg-mogra p-6 md:p-8",
         className,
       )}
     >

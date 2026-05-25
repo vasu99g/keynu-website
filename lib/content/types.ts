@@ -101,3 +101,37 @@ export interface Testimonial {
   rating?: number;
   order: number;
 }
+
+// ─── Pillars (Face / Skin / Hair / Body / Smile) ───────────────────────────
+
+/**
+ * The five high-level disciplines Keynu practises. These sit above the
+ * detailed treatment hierarchy and act as the homepage gateway — they map
+ * loosely to subsets of the treatment categories used in /treatments.
+ */
+export type PillarTone = "marigold" | "saffron" | "walnut" | "forest" | "madder";
+
+export interface Pillar {
+  id: "face" | "skin" | "hair" | "body" | "smile";
+  number: string;
+  name: string;
+  blurb: string;
+  imageSrc: string;
+  href: string;
+  /** Hover-state palette. Each pillar gets its own gradient + text color. */
+  hoverTone: PillarTone;
+}
+
+// ─── Concerns (concern-led navigation) ─────────────────────────────────────
+
+/**
+ * A patient concern paired with the protocol Keynu has built for it.
+ * Powers the ConcernDial — concern-first navigation, treatment-second.
+ */
+export interface Concern {
+  id: string;
+  label: string;
+  title: string;
+  lead: string;
+  protocol: string[];
+}

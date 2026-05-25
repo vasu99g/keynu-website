@@ -41,15 +41,37 @@ const config: Config = {
     },
     extend: {
       colors: {
+        // Warm orange family
         saffron: "var(--color-saffron)",
+        marigold: "var(--color-marigold)",
+        kinnow: "var(--color-kinnow)",
+        // Editorial red
+        madder: "var(--color-madder)",
+        // Surfaces
         mogra: "var(--color-mogra)",
         sandalwood: "var(--color-sandalwood)",
+        // Type / contrast
+        ink: "var(--color-ink)",
+        ash: "var(--color-ash)",
         walnut: "var(--color-walnut)",
         forest: "var(--color-forest)",
       },
       fontFamily: {
         body: ["var(--font-body)", "system-ui", "sans-serif"],
         heading: ["var(--font-heading)", "Georgia", "serif"],
+        editorial: ["var(--font-editorial)", "Georgia", "serif"],
+        devanagari: ["var(--font-devanagari)", "serif"],
+      },
+      borderRadius: {
+        // Editorial scale — small, intentional, never bubbly
+        xs: "2px",
+        sm: "4px",
+        DEFAULT: "6px",
+        md: "6px",
+        lg: "10px",
+        xl: "14px",
+        "2xl": "18px",
+        "3xl": "22px",
       },
       fontSize: {
         // Mobile-first; responsive overrides applied via Tailwind breakpoints

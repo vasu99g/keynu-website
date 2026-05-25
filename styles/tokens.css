@@ -1,49 +1,64 @@
 /* =============================================================================
  * Keynu design tokens
  * -----------------------------------------------------------------------------
- * Single source of truth for brand palette + typography variables, exposed as
- * CSS custom properties so they're inspectable in dev tools and themeable
- * without rebuilding Tailwind.
+ * Single source of truth for brand palette + typography + spacing variables,
+ * exposed as CSS custom properties so they're inspectable in dev tools and
+ * themeable without rebuilding Tailwind.
  *
- * Palette per Keynu Brand Guidelines:
- *   - Hero pairing: Saffron (#FBB04C) + Mogra (#FFFEF0)
- *   - Surfaces:     Mogra (default) / Sandalwood (#EADBB7) secondary
- *   - Type:         Walnut (#562E26) body / Forest (#253327) accent
- *
- * Walnut + Forest must be used as accents only — never as full backgrounds.
+ * v3 — design-refresh alignment (Marcellus + Cormorant Garamond + Work Sans,
+ * tightened radii, full palette including Marigold / Madder / Ink / Ash).
  * ============================================================================= */
 
 :root {
-  /* Brand palette */
+  /* ── Brand palette ─────────────────────────────────────────────────────── */
   --color-saffron: #fbb04c;
+  --color-marigold: #e87722;
+  --color-kinnow: #ef9e08;
+  --color-madder: #9d3a2f;
   --color-mogra: #fffef0;
   --color-sandalwood: #eadbb7;
   --color-walnut: #562e26;
   --color-forest: #253327;
+  --color-ink: #1b1612;
+  --color-ash: #6b6354;
 
-  /* Semantic tokens — use these in components, not raw palette */
+  /* ── Semantic tokens — prefer these over raw palette in components ────── */
   --surface-canvas: var(--color-mogra);
   --surface-secondary: var(--color-sandalwood);
   --surface-accent: var(--color-forest);
 
-  --ink-primary: var(--color-walnut);
-  --ink-secondary: rgb(86 46 38 / 0.72); /* Walnut at 72% */
-  --ink-muted: rgb(86 46 38 / 0.56);
+  --ink-primary: var(--color-ink);
+  --ink-secondary: var(--color-ash);
+  --ink-muted: rgb(107 99 84 / 0.7);
   --ink-on-accent: var(--color-mogra);
+  --ink-heading: var(--color-walnut);
 
   --accent-primary: var(--color-saffron);
+  --accent-pop: var(--color-marigold);
+  --accent-pressed: var(--color-kinnow);
+  --accent-editorial: var(--color-madder);
 
-  /* Typography — fonts injected via next/font in app/layout.tsx */
-  --font-body: var(--font-nunito-sans), system-ui, sans-serif;
-  --font-heading: var(--font-fraunces), Georgia, serif;
+  /* ── Typography — fonts injected via next/font in app/layout.tsx ──────── */
+  --font-body: var(--font-body-sans), "Helvetica Neue", system-ui, sans-serif;
+  --font-heading: var(--font-heading-display), Georgia, serif;
+  --font-editorial: var(--font-heading-editorial), Georgia, serif;
+  --font-devanagari: var(--font-devanagari-noto), "Noto Serif Devanagari", serif;
 
-  /* Motion */
+  /* ── Border radii — small + intentional, never bubbly ─────────────────── */
+  --r-xs: 2px;
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 10px;
+  --r-xl: 14px;
+  --r-pill: 999px;
+
+  /* ── Motion ───────────────────────────────────────────────────────────── */
   --ease-keynu: cubic-bezier(0.16, 1, 0.3, 1);
   --duration-fast: 200ms;
   --duration-base: 400ms;
   --duration-slow: 700ms;
 
-  /* Layout rhythm */
+  /* ── Layout rhythm ────────────────────────────────────────────────────── */
   --section-y: 6rem;
   --section-y-lg: 8rem;
 }

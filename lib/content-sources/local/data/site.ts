@@ -11,7 +11,7 @@ export const siteSettings: SiteSettings = {
   brandName: "Keynu",
   tagline: "Beyond beauty",
   description:
-    "A premium aesthetics and wellness clinic in Paschim Vihar, New Delhi. Rooted in Indian hospitality, built on clinical excellence — since 1996.",
+    "An aesthetics and wellness clinic in Paschim Vihar, New Delhi. Doctor-led care across face, skin, hair, body and smile. A unit of BDC.",
   contact: {
     addressLines: ["B-2/11, Basement", "Paschim Vihar"],
     city: "New Delhi",
@@ -38,5 +38,5 @@ export const siteSettings: SiteSettings = {
       url: "https://instagram.com/keynu",
     },
   ],
-  founded: 1996,
+  founded: 2021,
 };

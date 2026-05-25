@@ -61,7 +61,7 @@ export function MobileMenu({ links, triggerClassName }: MobileMenuProps) {
         aria-expanded={isOpen}
         aria-controls="mobile-navigation-drawer"
         className={cn(
-          "inline-flex h-9 w-9 items-center justify-center rounded-full border border-walnut/15 text-walnut transition-colors duration-base ease-keynu hover:border-walnut/40 hover:bg-walnut/5 lg:hidden",
+          "inline-flex h-9 w-9 items-center justify-center rounded-full border border-current/20 text-current transition-colors duration-base ease-keynu hover:border-current/50 hover:bg-current/5 lg:hidden",
           triggerClassName,
         )}
       >

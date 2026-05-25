@@ -26,7 +26,7 @@ export function TreatmentCategoryCard({
       href={href}
       aria-label={`Explore ${category.name} treatments`}
       className={cn(
-        "group relative flex h-full flex-col justify-between gap-8 overflow-hidden rounded-3xl border border-walnut/10 p-6 transition-all duration-base ease-keynu",
+        "group relative flex h-full flex-col justify-between gap-8 overflow-hidden rounded-xl border border-walnut/10 p-6 transition-all duration-base ease-keynu",
         "hover:-translate-y-0.5 hover:border-walnut/30 hover:shadow-[0_24px_60px_-30px_rgba(86,46,38,0.35)]",
         tone === "default" ? "bg-mogra" : "bg-sandalwood/40",
         "md:p-8",

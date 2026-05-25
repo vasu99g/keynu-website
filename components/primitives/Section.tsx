@@ -37,7 +37,12 @@ export const Section = forwardRef<HTMLElement, SectionProps>(
   ({ spacing = "default", tone = "canvas", className, children, ...rest }, ref) => (
     <section
       ref={ref}
-      className={cn(spacingClassByVariant[spacing], toneClassByVariant[tone], className)}
+      className={cn(
+        "relative isolate overflow-hidden",
+        spacingClassByVariant[spacing],
+        toneClassByVariant[tone],
+        className,
+      )}
       {...rest}
     >
       {children}
